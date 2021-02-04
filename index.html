@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="blockrain.js/src/blockrain.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 420px)" href="./css/mobile.css"> -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Page Title</title>
+</head>
+<body>
+<div id="container">
+    <img id="top-image" src="./images/transparent-apple-tree.png">
+    </img>
+    <div id="header">We are
+        <div id="applesauce">
+            <div>Apple</div>
+            <div>sauce</div>
+        </div>
+    </div>
+    <div>
+    <div id="spacer"></div>
+    <img id="bottom-image" src="./images/transparent-apple-tree.png">
+    </img>
+    <div id="body-text">
+        We help brands imagine — and then grow — their wildest dreams. <br/><br/>
+        We work closely with founders & executives from venture-funded startups to legacy brands looking toward exploration and reinvention.<br/><br/>
+        Today’s most successful brands know that building a strong community is paramount to building a scalable business.<br/><br/>
+        To us, this is fundamental.<br/><br/>
+        That’s why we take a multi-faceted approach to building communities and growing brands — grounded in values and product, online and offline, technical and creative.<br/><br/>
+        Our secret sauce? <br/><br/>
+        A combination of strategies & tactics that blend creative direction, experience design, community development, rapid iteration, product management, acquisition & retention, data infrastructure, and growth marketing.<br/><br/>
+        We started & built our own companies that defined entirely new sectors and quickly expanded across the globe — companies like General Assembly, Daybreaker, The Fund, and The Maze Group.<br/><br/>
+        We advise, consult, and shepherd clients who look at the world through their own lens, who aren’t afraid to chart their own path — clients like Nike, Adobe, Google, AmEx, GE, Macy’s, One Hotels, Lululemon, Clinique, NFL, IAC, Capital One, HelloFresh, Nutraceutical, Assouline, Seed, ZZ Driggs, NYC Mayor’s Office, Yale University, Oberlin College, and more.<br/><br/>
+        We specialize in a few things, and we do them well. In fact, we consider them our superpowers.<br/><br/>
+        Superpowers like managing growth teams, building multi-channel testing programs, driving data-driven acquisition & retention strategies, establishing core data infrastructure, and leading technical architecture.<br/><br/>
+        And superpowers like turning your customers & stakeholders into an actual thriving community, helping you and your team live & breathe like real entrepreneurs, and working with you to design insanely inspiring & transformative brand experiences.<br/><br/>
+        As you might imagine, we give our all to everything we do. Our team is led by serial entrepreneurs and marketing magicians Matthew O. Brimer & Dean Ginsberg. (They’re good guys, and they really know their stuff. But don’t take it from us, we’re the ones writing this copy.)<br/><br/>
+        Anyway, enough about us. How about you? If you think we should talk, say so at hello@cheersapplesauce.com.<br/><br/>
+        We look forward to scheming with you.<br/><br/>
+        <div id="closing">
+            Cheers,          
+            Applesauce
+        </div>
+        
+        <!-- <div id="bottom-image-container">
+            
+        </div> -->
+    </div>
+       
+    </div>
+
+</div>
+<script>
+    const spacer = document.querySelector('#spacer')
+    const adjustSpacerHeight = x => {
+        if (x.matches) {
+            const container = document.querySelector('#container')
+            spacer.style.height = `${container.clientHeight - 500}px`
+        } else {
+            spacer.style.height = `${Document.body.clientHeight - 500}px`
+        }
+    }
+    const x = window.matchMedia("(max-width: 420px)")
+    adjustSpacerHeight(x)
+    // window.onresize = () => {
+    //     // = `${window.innerHeight}px`;
+    //     const spacer = document.querySelector('#spacer')
+    //     const container = document.querySelector('#container')
+    //     console.log(container.style)
+    //     spacer.style.height = `${container.clientHeight - 500}px`
+    // }
+    // window.onresize()
+</script>
+</body>
+</html>
